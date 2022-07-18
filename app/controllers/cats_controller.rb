@@ -5,7 +5,7 @@ class CatsController < ApplicationController
   def index
     @search = Cat.ransack(params[:q])
     @search.sorts = 'id desc' if @search.sorts.empty?
-    @cats = @search.result.page(params[:oage])
+    @cats = @search.result.page(params[:page])
   end
 
   # GET /cats/1
