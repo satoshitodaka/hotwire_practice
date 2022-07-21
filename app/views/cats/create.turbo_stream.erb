@@ -1,6 +1,4 @@
 <%# "cats"の先頭に@catを追加する %>
-<%= turbo_stream.prepend "cats", @cat%>
-<%# 登録の入力フォームを空にする %>
-<%= turbo_stream.update Cat.new, "" %>
+<%= turbo_stream.prepend "cats", @cat %>
 <%# フラッシュメッセージを表示する %>
-<%= turbo_stream_flash %>
+<%= turbo_stream_flash %>s
